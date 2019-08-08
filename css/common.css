@@ -1,0 +1,146 @@
+/*图片放大缩小组件样式*/
+.image-small.image-content {
+  text-align: center
+}
+.image-large.image-content {
+  cursor: -webkit-zoom-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.image-large.image-content img {
+  max-width: calc(100% - 150px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.image-small.image-content {
+  cursor: -webkit-zoom-in;
+}
+
+.view-original-image {
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 50px);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background-color: rgba(0,0,0,.4);
+  font-size: 15px;
+  color: #fff;
+  z-index: 10000001;
+  text-decoration: none;
+}
+
+.view-original-image:hover {
+  text-decoration: none;
+}
+
+/*回到顶部组件样式*/
+.return-header {
+  opacity: 0.5;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #e89a32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,.12);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.return-header:hover {
+  opacity: 1;
+}
+
+.return-header i {
+  display: inline-block;
+  border-top: 10px transparent solid;
+  border-right: 10px transparent solid;
+  border-left: 10px transparent solid;
+  border-bottom: 10px  #e89a32 solid;
+  margin-top: -10px;
+}
+
+/*特殊表格样式*/
+table.table-special th,
+table.table-special td {
+  color: #2c3e50;
+  font-size: 16px;
+  border: 1px solid #dfe2e5;
+  padding: 6px 16px;
+  width: 75px;
+}
+
+table.table-special th {
+  font-weight: bold;
+}
+
+table.table-special tr th:nth-child(2) {
+  min-width: 67px;
+}
+
+table.table-special tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/*公共样式*/
+body {
+  font-size: 14px !important;
+}
+
+a.sidebar-link {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+ul li, ol li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+li a {
+  display: inline-block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.sidebar-group.is-sub-group > .sidebar-heading:not(.clickable) {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+blockquote {
+  background-color: #eef0f4;
+  color: rgba(0,0,0,.5) !important;
+  font-size: 14px !important;
+  padding-left: 1.5rem !important;
+  border-left: 8px solid #dddfe4 !important;
+}
+
+.red {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+
+/*blockquote ul li {
+  margin: 8px 0 0 1.5rem;
+}*/
